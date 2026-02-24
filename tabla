@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>tabla html</title>
+</head>
+  <body>
+<table border"1">
+<h2>ejemplo de tabla</h2>
+<table border= "1">
+<tr>
+<th>nombre</th>
+<th>edad</th>
+<th>ciudad</th>
+</tr>
+<tr>
+  <th>Ana</th>
+  <th>17</th>
+  <th>ciudad de mexico</th>
+</tr>
+<tr>
+  <th>luis</th>
+  <th>18</th>
+  <th>guadalajara</th>
+</tr>
+</table>
+</body>
+</html>
+
