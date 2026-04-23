@@ -1,131 +1,164 @@
-<html>
+<DOCTYPE html>
+<html lang="es">
 <head>
-<title>tabla html</title>
- <style>
-        table {
-            width: 60%;
-            border-collapse: collapse;
-            margin: 20px auto;
-            font-family: Arial, sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Lluavi Nahid</title>
+    <style>
+        /* Definición de colores y fuentes */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin: 0;
+            color: #333;
         }
-        th, td {
-            border: 1px solid #333;
-            padding: 8px;
+
+        .cv-container {
+            background-color: white;
+            width: 800px;
+            display: grid;
+            grid-template-columns: 1fr 1.5fr; /* Dos columnas: Izquierda y Derecha */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* Estilos generales de secciones */
+        .sidebar {
+            padding: 40px 30px;
+        }
+
+        .main-content {
+            padding: 40px 30px;
+        }
+
+        .profile-img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+
+        h2.section-title {
+            background-color: #9ab495; /* Verde del CV */
+            color: #333;
             text-align: center;
+            padding: 5px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
         }
-        th {
-            background-color: #f2f2f2;
-        }
-        caption {
-            font-size: 18px;
-            font-weight: bold;
+
+        .header-name {
+            background-color: #9ab495;
+            padding: 20px;
+            text-align: center;
             margin-bottom: 10px;
         }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 5px;
+            font-weight: normal;
+        }
+
+        .subtitle {
+            text-align: center;
+            letter-spacing: 3px;
+            color: #555;
+            margin-bottom: 50px;
+        }
+
+        .course-title {
+            background-color: #d8c0ab; /* Café claro del CV */
+            color: #333;
+            padding: 5px 20px;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Listas y textos */
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .contact-info p, .education-info p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
     </style>
-
 </head>
-  hola mundo 
-<h1>
- hola mundo2 
-  </h1>
-  <h2>
-  hola mundo3
-</h2>
+<body>
 
-  <body>
+    <div class="cv-container">
+        
+        <div class="sidebar">
+            <img src="WhatsApp Image 2026-04-23 at 2.39.08 PM.jpeg" alt="Foto de Perfil" class="profile-img">
 
-<h2>ejemplo de tabla</h2>
-<table border= "1">
-<tr>
-<th>nombre</th>
-<th>edad</th>
-<th>ciudad</th>
-</tr>
-<tr>
-  <th>Ana</th>
-  <th>17</th>
-  <th>ciudad de mexico</th>
-</tr>
-<tr>
-  <th>luis</th>
-  <th>18</th>
-  <th>guadalajara</th>
-</tr>
-</table>
+            <h2 class="section-title">Acerca de mi</h2>
+            <p>Me defino como una persona responsable, creativa, disciplinada. Estudiante del tercer año de preparatoria.</p>
 
-<table>
-    <caption>Lista de Estudiantes</caption>
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>Nombre</th>
-            <th>Edad</th>
-            <th>Ciudad</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>Ana</td>
-            <td>18</td>
-            <td>Madrid</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Carlos</td>
-            <td>19</td>
-            <td>Barcelona</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Lucía</td>
-            <td>17</td>
-            <td>Sevilla</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Jorge</td>
-            <td>20</td>
-            <td>Valencia</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>María</td>
-            <td>18</td>
-            <td>Bilbao</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Pedro</td>
-            <td>21</td>
-            <td>Zaragoza</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>Sofía</td>
-            <td>19</td>
-            <td>Málaga</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>Diego</td>
-            <td>22</td>
-            <td>Murcia</td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td>Elena</td>
-            <td>20</td>
-            <td>Granada</td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td>Raúl</td>
-            <td>18</td>
-            <td>Toledo</td>
-        </tr>
-    </tbody>
-</table>
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-info">
+                <p><span class="bold">Celular:</span> 5511872367</p>
+                <p><span class="bold">Correo:</span> lluaviherrera@gmail.com</p>
+                <p><span class="bold">Dirección:</span> Ixtlahuaca de Rayon, Estado de México</p>
+            </div>
+
+            <h2 class="section-title">Educación</h2>
+            <div class="education-info">
+                <p class="bold">Instituto Cultural Canadiense</p>
+                <p>Nivel de preparatoria<br>Generación 2023-2026</p>
+                <br>
+                <p class="bold">Instituto Cultural Canadiense</p>
+                <p>Nivel secundaria<br>Generación 2020-2023</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="header-name">
+                <h1>LLUAVI NAHID</h1>
+            </div>
+            <p class="subtitle">FUTURA MÉDICO CIRUJANA</p>
+
+            <h2 class="course-title">Cursos / Idiomas</h2>
+            
+            <h3>Ingles 85%</h3>
+            <ul>
+                <li>kinder</li>
+                <li>primaria</li>
+                <li>secundaria</li>
+                <li>preparatoria</li>
+            </ul>
+
+            <h3>Frances 45%</h3>
+            <ul>
+                <li>secundaria</li>
+                <li>preparatoria</li>
+            </ul>
+
+            <h3>Coursera</h3>
+            <ul>
+                <li>Tesoros de Física y sus descubridores</li>
+                <li>Trigonometría y geometría analítica</li>
+                <li>Nutrición y obesidad: control de sobrepeso</li>
+                <li>Hacer negocios con multinacionales y empresas en América Latina</li>
+            </ul>
+        </div>
+
+    </div>
 
 </body>
 </html>
